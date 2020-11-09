@@ -1,11 +1,13 @@
 pipeline {
-    agent any
+    agent    docker {
+            image 'python:3.8'
+        }
 
     stages {
         stage('Install requirements') {
             steps{
             echo '######################## Install requirements #####################'
-            sh 'apt update && apt install python-pip && python -m pip install -r requirements.txt'
+            sh 'python -m pip install -r requirements.txt'
             }
             
         }
