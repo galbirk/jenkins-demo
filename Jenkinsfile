@@ -5,7 +5,7 @@ pipeline {
         stage('Install requirements') {
             steps{
             echo '######################## Install requirements #####################'
-            sh 'python -m pip install -r requirements.txt'
+            sh 'sudo apt update && sudo apt install python-pip && python -m pip install -r requirements.txt'
             }
             
         }
