@@ -11,7 +11,7 @@ pipeline {
         stage('Run Test') {
             steps{
             echo '######################## Run Test #####################'
-            sh 'add.py && cat result.txt |grep 4'
+            sh 'pytho script.py && cat result.txt |grep 4'
             }
         }
     }
