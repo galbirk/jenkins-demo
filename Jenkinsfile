@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    // stages {
+     stages {
     //     stage('Install requirements') {
     //         steps{
     //         echo '######################## Install requirements #####################'
@@ -15,3 +15,4 @@ pipeline {
             }
         }
     }
+}
