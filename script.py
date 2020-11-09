@@ -6,5 +6,5 @@ def add(a,b):
 result = add(2,2)
 
 with open('result.txt','w') as f:
-    f.write(result)
+    f.write(str(result))
     f.flush()
