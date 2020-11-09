@@ -11,7 +11,7 @@ pipeline {
         stage('Run Test') {
             steps{
             echo '######################## Run Test #####################'
-            sh 'python script.py && cat result.txt |grep 4'
+            sh 'python -m pytest -q test.py'
             }
         }
     }
