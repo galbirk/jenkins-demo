@@ -11,7 +11,7 @@ pipeline {
         stage('Run Test') {
             steps{
             echo '######################## Run Test #####################'
-            sh 'pytest -q .\test.py'
+            sh 'pytest -q test.py'
             }
         }
     }
