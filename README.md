@@ -1,2 +1,2 @@
 # jenkins-demo
-for jenknis CI/CD exercises.
+Demo for jenknis CI/CD exercises.
